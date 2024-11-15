@@ -2,7 +2,7 @@
 public class Cheers {
         public static void main(String[] args) {
                 // Replace this comment with your code
-                String str = args[0];
+                String str = args[0].toUpperCase();
                 int roundsPrints = Integer.parseInt(args[1]);
                 char[] checkChars = { 'A', 'E', 'F', 'H', 'I', 'L', 'M', 'N', 'O', 'R', 'S', 'X' };
                 for (int i = 0; i < str.length(); i++) {
@@ -17,7 +17,7 @@ public class Cheers {
                                 }
                         }
                         if (bool == true) {
-                                System.out.println("Give me a " + str.charAt(i) + ": " + str.charAt(i) + "!");
+                                System.out.println("Give me a  " + str.charAt(i) + ": " + str.charAt(i) + "!");
                         }
                 }
                 System.out.println("What does that spell?");
