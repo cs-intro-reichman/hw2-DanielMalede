@@ -3,10 +3,11 @@ public class Collatz {
 	public static void main(String args[]) {
 		// Replace this comment with your code
 		int number = Integer.parseInt(args[0]);
+		String checkIfVOrCString = args[1];
 		int roundCounter = 1;
 		int counter = 0;
 
-		if (args[1] == "v") {
+		if (checkIfVOrCString.valueOf("v") == "v") {
 			for (int i = 0; i < number; i++) {
 				System.out.print(i + 1 + " ");
 				number = i + 1;
@@ -42,9 +43,8 @@ public class Collatz {
 				System.out.println("");
 			}
 			System.out.println("Every one of the first " + args[0] + " hailstone sequences reached 1.");
+		} else {
+			System.out.println("Every one of the first " + args[0] + " hailstone sequences reached 1.");
 		}
-		System.out.println("Every one of the first " + args[0] + " hailstone sequences reached 1.");
-
-
 	}
 }
