@@ -24,7 +24,7 @@
 public class CalcPi {
 	public static void main(String[] args) {
 		// Replace this comment with your code
-		double rounds = Double.parseDouble(args[0])-1;
+		double rounds = Double.parseDouble(args[0]) - 1;
 		double sum = 1;
 		double num = 3;
 		double increase = 2;
@@ -38,28 +38,28 @@ public class CalcPi {
 				divided = 1.0 / (num += increase);
 			}
 		}
-		System.out.println("pi according to java: "+ Math.PI);
-		System.out.println("pi according to java: "+ (sum*4));
+		System.out.println("pi according to Java: " + Math.PI);
+		System.out.println("pi, approximate:      " + (sum * 4));
 		// System.out.println(divided);
 	}
 }
 
 // public class CalcPi {
-// 	public static void main(String[] args) {
-// 		int num = Integer.parseInt(args[0]);
-// 		double pi = 0.0;
-// 		for (int i = 0; i < num; i++) {
-// 			double sum = (1.0 / ((2 * i) + 1.0));
-// 			if ((i % 2) == 0) {
-// 				pi += sum;
-// 			}
-// 			else{
-// 				pi -= sum;
-// 			}
+// public static void main(String[] args) {
+// int num = Integer.parseInt(args[0]);
+// double pi = 0.0;
+// for (int i = 0; i < num; i++) {
+// double sum = (1.0 / ((2 * i) + 1.0));
+// if ((i % 2) == 0) {
+// pi += sum;
+// }
+// else{
+// pi -= sum;
+// }
 
-// 		}
+// }
 
-// 		pi *= 4;
-// 		System.out.println(pi);
-// 	}
+// pi *= 4;
+// System.out.println(pi);
+// }
 // }
